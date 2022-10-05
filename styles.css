@@ -8,7 +8,7 @@ ul {
     list-style: none;
 }
 
-body{
+body {
     background-image: url(./assete/bg.jpg);
     background-position: top center;
     background-size: 100% auto;
@@ -17,51 +17,49 @@ body{
 }
 
 body * {
-    font-family: 'inter', sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 160%;
 }
 
 header {
-    margin-top: 32px;
-    text-align: center;
+    padding-top: 32px;
     height: calc(120px + 32px);
 }
 
 header div {
     width: 120px;
     margin: auto;
-    background-image: linear-gradient(90deg, #4c3b7e 0%, #12eb9f 50.52%, #1465dd 100%);
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
 
     border-radius: 50%;
 
     display: flex;
     padding: 4px;
 
-    transform:  transform .3s;
+    transition: transform .3s;
 }
 
 header div:hover {
-    transform: scale(1.1);
+    transform: scale(1.1)
 }
 
-header img { 
-        width: 100%;
-        border-radius: 50%;
+header div img {
+    width: 100%;
+    border-radius: 50%;
 }
 
-main { 
+main {
     max-width: 580px;
     width: 90%;
-    margin:  32px auto;
+    margin: 32px auto;
 
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 24px;
 }
 
 section {
     color: white;
-    background-image: linear-gradient(90deg, #4c3b7e 0%, #12eb9f 50.52%, #1465dd 100%);background-image: linear-gradient(90deg, #9572FC  0% #43E7AD  50.52%  #E2D45C  100%);
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
     padding-top: 4px;
     border-radius: 10px;
 }
@@ -71,7 +69,6 @@ section div {
     padding: 32px;
     padding-top: 24px;
     border-radius: 8px;
-
 }
 
 section h2 {
@@ -79,8 +76,8 @@ section h2 {
 }
 
 section p {
-letter-spacing: -0.18px;
-color: #A1A1AA;
+    letter-spacing: -0.18px;
+    color: #A1A1AA;
 }
 
 section ul {
@@ -89,7 +86,6 @@ section ul {
     gap: 16px;
 
     margin-top: 24px;
-
 }
 
 section ul li {
@@ -97,22 +93,21 @@ section ul li {
 }
 
 section ul li:hover {
-    transform: scale(1.1);;
+    transform: scale(1.1)
 }
 
-
-
-.game-list img {
+.games-list img {
     width: 90px;
     border-radius: 8px;
 }
 
 .channel-list img {
-    border-radius: 50%;
+    border-radius: 50%; 
     width: 70px;
-    border: 1px solid #443e54;
+    border: 1px solid #443E54;
 }
-/*animation */
+
+/* animation */
 
 header div {
     animation: fromTop .7s .2s backwards;
@@ -146,7 +141,7 @@ main section:nth-child(3) {
     }
 }
 
-@keyframes FromBottom {
+@keyframes fromBottom {
     from {
         opacity: 0;
         transform: translateY(30px)
